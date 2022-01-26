@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script>
+			function validateForm() {
+			var d = document.getElementById("email").value;
+			var e = document.getElementById("password").value;
+			
+		if(d == ""){
+			alert("Please enter your email");
+			d.focus();
+			return false;
+		}
+
+		else if(e == ""){
+			alert("Please enter your password");
+			e.focus();
+			return false;
+		}
+		
+		else{
+			alert("Details have been sent");
+		}
+		
+	
+	}
+		</script>
+	<link rel="stylesheet" href="css/all.min.css">	
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="LAB3.css">
+	<title>FUTURE STORES</title>
+	</head>
+	<body onload=" return load()">
+	<div class="navbar" style="border: none">
+		<a href="index.html" class="navbartext"><b>DF-STORES</b></a>
+		<a class="navbartext" href="index.html"><i class="fas fa-home"></i>HOME</a>
+		<a class="navbartext" href="login.html"><i class="fas fa-sign-in-alt"></i>LOGIN</a>
+		<a class="navbartext" href="REGISTER.html"><i class="fas fa-male"></i>REGISTER</a>
+		<a class="navbartext" href="CONTACT US.html"><i class="fas fa-id-card"></i>CONTACT US</a>
+		
+		
+		
+		<div class="search">
+        <form>
+			<button type="button" onclick="window.location.href='cart.html'"><img src="cart.png" height="28px"></button>
+			<button class=""><img src="search.png" height="28px"></button>
+			<input type="text" placeholder="What are you looking for....." name="search">	
+		</form>
+ 
+		</div>
+		
+	</div>
+	
+	
+		<div class="container1">
+
+<form name="myForm" method="post">
+    <h1 class="regist">Login</h1>
+    <p class="regist">Please fill in this form to log into your account.</p>
+    <hr>
+	<label class="regist"><b>Email*</b></label>
+		<input type="text" placeholder="Enter Email" id="email">
+		<br>
+		<br>
+
+		<label class="regist"><b>Password*</b></label>
+		<input type="password" placeholder="Enter Password" id="password">
+		<br>
+		<br>
+	<button type="submit" class="registerbtn" onclick="return validateForm()">Sign in</button>
+
+	</form>
+	
+
+	<div class="container1 signin">
+    <p>Don't have an account register? <a href="register.html">Register first</a>.</p>
+	</div>
+	
+	<footer>
+    <div class="footer-content">
+        <p class="logo" alt="">DF-STORES<br><span class="logo1">The best online shopping store you can order from<br>About Company</span><br><span class="logo2">DF Stores was founded on 2016 by Inyang Akanimoh. The website of the store was developed by Inyang Akanimoh in 2017. Since then the company has kept on growing. We believe in a world where you have total freedom to be you, without judgement. To experiment. To express yourself. To be brave and grab life as the extraordinary adventure it is. So we make sure everyone has an equal chance to discover all the amazing things they’re capable of – no matter who they are, where they’re from or what looks they like to boss. We exist to give you the confidence to be whoever you want to be.<br>support emails - help@clothing.com, customersupport@clothing.com.<br><a href="#" class="social-link">Terms & services</a></span></p>
+		
+		
+        <div class="footer-ul-container">
+            <ul class="category">
+                <li class="category-title">men</li>
+                <li><a href="#" class="footer-link">t-shirts</a></li>
+                <li><a href="#" class="footer-link">sweatshirts</a></li>
+                <li><a href="#" class="footer-link">shirts</a></li>
+                <li><a href="#" class="footer-link">jeans</a></li>
+                <li><a href="#" class="footer-link">trousers</a></li>
+                <li><a href="#" class="footer-link">shoes</a></li>
+                <li><a href="#" class="footer-link">casuals</a></li>
+                <li><a href="#" class="footer-link">formals</a></li>
+                <li><a href="#" class="footer-link">sports</a></li>
+                <li><a href="#" class="footer-link">watch</a></li>
+            </ul>
+            <ul class="category">
+                <li class="category-title">women</li>
+                <li><a href="#" class="footer-link">t-shirts</a></li>
+                <li><a href="#" class="footer-link">sweatshirts</a></li>
+                <li><a href="#" class="footer-link">shirts</a></li>
+                <li><a href="#" class="footer-link">jeans</a></li>
+                <li><a href="#" class="footer-link">trousers</a></li>
+                <li><a href="#" class="footer-link">shoes</a></li>
+                <li><a href="#" class="footer-link">casuals</a></li>
+                <li><a href="#" class="footer-link">formals</a></li>
+                <li><a href="#" class="footer-link">sports</a></li>
+                <li><a href="#" class="footer-link">watch</a></li>
+            </ul>
+			
+        </div>
+		
+
+    </div>
+	
+</footer>
+	
+<div class="footer">
+			<h2 class="footertext">&copy;2021 DF-STORES</h2>
+		</div>
+	
+
+</body>
+</html>

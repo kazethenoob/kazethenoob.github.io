@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<script>
+			function validateForm() {
+  			var a = document.getElementById("fname").value;
+			var b = document.getElementById("lname").value;
+			var c = document.getElementById("othernames").value;
+			var d = document.getElementById("email").value;
+			var e = document.getElementById("password").value;
+			var f = document.getElementById("repeatpassword").value;
+			var g = document.getElementById("country").value;
+			var h = document.getElementById("phone").value;
+			var i = document.getElementById("city").value;
+			var j = document.getElementById("address").value;
+			var k = document.forms["myForm"]["gender"];
+			var l = document.forms["myForm"]["checkboxsize"];
+			var o = document.forms["myForm"]["selects"];
+			var p = document.forms["myForm"]["cities"];
+
+			
+			
+  		if (a== ""){
+    		alert("Please enter your first name");
+			a.focus();
+			return false;
+    		
+  		}
+  		else if(b == ""){
+			alert("Please enter your last name ");
+			b.focus();
+		  	return false;
+			
+		}
+
+		else if(c == ""){
+			alert("Please enter your other names");
+			c.focus();
+			return false;
+		}
+
+		else if(d == ""){
+			alert("Please enter your email");
+			d.focus();
+			return false;
+		}
+
+		else if(e == ""){
+			alert("Please enter your password");
+			e.focus();
+			return false;
+		}
+
+		else if(e.length < 8){
+			alert("Password must be atleast 8 characters");
+			e.focus();
+			return false;
+		}
+
+
+		else if(f == ""){
+			alert("Please enter your password again");
+			f.focus();
+			return false;
+		}
+
+		else if(f !== e){
+			alert("Repeated Password must be the same with first password");
+			f.focus();
+			return false;
+		}
+
+		else if(g == "Select Country"){
+			alert("Country must be stated");
+			g.focus();
+			return false;
+		}
+
+		else if(isNaN(h)){
+			alert("Phone number must be in numbers");
+			h.focus();
+			return false;
+		}
+
+		else if(i == ""){
+			alert("City must be stated");
+			i.focus();
+			return false;
+		}
+
+		else if(j == ""){
+			alert("Address must be stated");
+			j.focus();
+			return false;
+		}
+
+		else if((k[0].checked == false)&&(k[1].checked == false)&&(k[2].checked == false)){
+			alert("Gender must be stated");
+			k.focus();
+			return false;
+		}
+
+		else if((l[0].checked == false)&&(l[1].checked == false)&&(l[2].checked == false)&&(l[3].checked == false)&&(l[4].checked == false)&&(l[5].checked == false)&&(l[6].checked == false)){
+			alert("Size must be stated");
+			l.focus();
+			return false;
+		}
+
+		else{
+			alert("Details have been sent");
+		}
+	
+	}
+
+		</script>
+	<link rel="stylesheet" href="css/all.min.css">	
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="LAB3.css">
+	<title>FUTURE STORES</title>
+	</head>
+	<body>
+	<div class="navbar" style="border: none">
+		<a href="index.html" class="navbartext"><b>DF-STORES</b></a>
+		<a class="navbartext" href="index.html"><i class="fas fa-home"></i>HOME</a>
+		<a class="navbartext" href="login.html"><i class="fas fa-sign-in-alt"></i>LOGIN</a>
+		<a class="navbartext" href="REGISTER.html"><i class="fas fa-male"></i>REGISTER</a>
+		<a class="navbartext" href="CONTACT US.html"><i class="fas fa-id-card"></i>CONTACT US</a>
+		
+		
+		
+		<div class="search">
+        <form>
+			<button type="button" onclick="window.location.href='cart.html'"><img src="cart.png" height="28px"></button>
+			<button class=""><img src="search.png" height="28px"></button>
+			<input type="text" placeholder="What are you looking for....." name="search">	
+		</form>
+ 
+		</div>
+		
+	</div><br>
+		
+		<div class="container1">
+
+<form name="myForm" method="post">
+    <h1 class="regist">Register</h1>
+    <p class="regist">Please fill in this form to create an account.</p>
+    <hr>
+	
+		<fieldset>
+		<legend class="regist"><b>Names</b></legend>
+		<label class="regist" ><b>First Name*</b></label>
+		<input type="text" placeholder="Your first name is..." id="fname">
+		<br>
+		<br>
+		
+		<label class="regist"><b>Last Name*</b></label>
+		<input type="text" placeholder="Your last name is..." id="lname">
+		<br>
+		<br>
+		
+		<label class="regist"><b>Other Names</b></label>
+		<input type="text" placeholder="" id="othernames">
+		<br>
+		<br>
+		</fieldset>
+		
+		
+		<label class="regist"><b>Email*</b></label>
+		<input type="text" placeholder="Enter Email" id="email">
+		<br>
+		<br>
+
+		<label class="regist"><b>Password*</b></label>
+		<input type="password" placeholder="Enter Password" id="password">
+		<br>
+		<br>
+
+		<label class="regist"><b>Repeat Password*</b></label>
+		<input type="password" placeholder="Repeat Password" id="repeatpassword">
+		<br>
+		<br>
+		
+		<label for="country" class="regist"><b>   
+				Country* 
+		</b></label> 
+		
+		<select id="country" name="country" value="">
+			<option value="Select Country">Select Country</option>  
+			<option value="Nigeria">Nigeria</option>  
+			<option value="USA">USA</option>  
+			<option value="Dubai">Dubai</option>  
+			<option value="Norway">Norway</option>  
+			<option value="Australia">Australia</option>  
+			<option value="Tokyo">Tokyo</option>  
+			<option value="Belgium">Belgium</option>  
+		</select>
+		<br>
+		<br>
+		
+		<label class="regist"><b>   
+				City* 
+		</b></label><br>
+			 <input list="cities" name="cities" id="city">
+		<datalist id="cities">
+			<option value="Abuja">
+			<option value="Rivers">
+			<option value="Lagos">
+			<option value="Kaduna">
+			<option value="Kogi">
+		</datalist>
+		<br>
+		<br>
+		
+		
+		<label class="regist"><b>Preferred Brands</b></label>
+		<select id="selects"  multiple>
+			<option value="NIKE">Nike</option>
+			<option value="ADIDAS">Adidas</option>
+			<option value="BALENCIAGA">Balenciaga</option>
+			<option value="ASOS">Asos</option>
+		</select>
+		<br>
+		<br>
+		
+		<label class="regist"><b> 
+			Gender*
+		</b></label><br>  
+			<input type="radio" id="male" name="gender" class="regist" value="male">
+			<label for= "male" class="regist" >Male</label> 
+			<input type="radio" id="female"  name="gender" class="regist" value="female">
+			<label for= "female" class="regist" >Female</label>  
+			<input type="radio" id="others" name="gender" class="regist" value="others">
+			<label for= "others" class="regist" >Others</label> 
+			<br>
+			
+			<label class="regist" id="address"><b>Address</b></label>
+			<textarea cols="80" rows="5" value="address"></textarea>
+			<br>
+			<br>
+			
+		<label class="regist"><b>   
+				Phone* 
+		</b></label>  
+			<input type="text" name="number"  value="" size="2" id="phone">
+			<br>
+			<br>
+			
+		<label class="regist"><b>Clothing Size</b></label>
+		<br>
+			<input type="checkbox" name="checkboxsize">
+			<label for="XS" class="regist" >XS</label><br>
+			<input type="checkbox" name="checkboxsize">
+			<label for="S" class="regist" >S</label><br>
+			<input type="checkbox" name="checkboxsize">
+			<label for="M" class="regist">M</label><br>
+			<input type="checkbox" name="checkboxsize">
+			<label for="L" class="regist">L</label><br>
+			<input type="checkbox" name="checkboxsize">
+			<label for="XL" class="regist">XL</label><br>
+			<input type="checkbox" name="checkboxsize">
+			<label for="XXL" class="regist">XXL</label><br>
+			<input type="checkbox" name="checkboxsize">
+			<label for="XXXL" class="regist">XXXL</label><br>
+			<br>
+			
+    <hr>
+
+
+
+    <p class="regist">By creating an account you agree to our <a href="#" class="regist">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn" onclick="return validateForm()">Register</button>
+
+	</form>
+	</div>
+
+
+
+
+
+
+	<div class="container1 signin">
+    <p>Already have an account? <a href="#">Sign in</a>.</p>
+	</div>
+	
+	<footer>
+    <div class="footer-content">
+        <p class="logo" alt="">DF-STORES<br><span class="logo1">The best online shopping store you can order from<br>About Company</span><br><span class="logo2">DF Stores was founded on 2016 by Inyang Akanimoh. The website of the store was developed by Inyang Akanimoh in 2017. Since then the company has kept on growing. We believe in a world where you have total freedom to be you, without judgement. To experiment. To express yourself. To be brave and grab life as the extraordinary adventure it is. So we make sure everyone has an equal chance to discover all the amazing things they’re capable of – no matter who they are, where they’re from or what looks they like to boss. We exist to give you the confidence to be whoever you want to be.<br>support emails - help@clothing.com, customersupport@clothing.com.<br><a href="#" class="social-link">Terms & services</a></span></p>
+		
+		
+        <div class="footer-ul-container">
+            <ul class="category">
+                <li class="category-title">men</li>
+                <li><a href="#" class="footer-link">t-shirts</a></li>
+                <li><a href="#" class="footer-link">sweatshirts</a></li>
+                <li><a href="#" class="footer-link">shirts</a></li>
+                <li><a href="#" class="footer-link">jeans</a></li>
+                <li><a href="#" class="footer-link">trousers</a></li>
+                <li><a href="#" class="footer-link">shoes</a></li>
+                <li><a href="#" class="footer-link">casuals</a></li>
+                <li><a href="#" class="footer-link">formals</a></li>
+                <li><a href="#" class="footer-link">sports</a></li>
+                <li><a href="#" class="footer-link">watch</a></li>
+            </ul>
+            <ul class="category">
+                <li class="category-title">women</li>
+                <li><a href="#" class="footer-link">t-shirts</a></li>
+                <li><a href="#" class="footer-link">sweatshirts</a></li>
+                <li><a href="#" class="footer-link">shirts</a></li>
+                <li><a href="#" class="footer-link">jeans</a></li>
+                <li><a href="#" class="footer-link">trousers</a></li>
+                <li><a href="#" class="footer-link">shoes</a></li>
+                <li><a href="#" class="footer-link">casuals</a></li>
+                <li><a href="#" class="footer-link">formals</a></li>
+                <li><a href="#" class="footer-link">sports</a></li>
+                <li><a href="#" class="footer-link">watch</a></li>
+            </ul>
+			
+        </div>
+		
+
+    </div>
+	
+</footer>
+	
+	
+	<div class="footer">
+			<h2 class="footertext">&copy;2021 DF-STORES</h2>
+		</div>
+	
+
+</body>
+</html>

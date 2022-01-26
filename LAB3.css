@@ -1,0 +1,482 @@
+img {
+}
+
+.productimage{
+	border-radius: 13px;
+}
+
+html,body {
+    margin:1px;
+    padding:1px;
+    overflow-x:hidden;
+}
+
+
+
+body{
+  background-image:	url("background2.jpg");
+}
+
+.navbar{
+	overflow: hidden;
+	background-color: #333;
+	width:100%;
+	font-family: Trebuchet MS;
+	border-radius: 23px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+}
+
+.navbartext{
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 22px 25px;
+  text-decoration: none;
+}
+
+.navbar a:hover{
+  background-color: #ddd;
+  color: black;
+  transition: 0.5s;
+}
+
+.men{
+	font-family: Trebuchet MS;
+	font-size:30px;
+	color: black;
+	text-align: center;
+}
+.bodyimage{
+	height: 1000px;
+	width: 100%;
+	border-radius: 23px;
+}
+
+.sampleclothes{
+	width:100%;
+	height: 700px;
+}
+
+.sampleclothes2{
+	width:100%;
+	height: 1200px;
+}
+
+
+.group1{
+	font-family: Trebuchet MS;
+}
+
+#group{
+	background: transparent;
+	width: 150px;
+	padding: 4px;
+	font-family: Trebuchet MS;
+}
+	
+	
+.cloth{
+  float: left;
+  width: 20%;
+  padding: 5px;
+  text-align: center;
+  height: 500px;
+  margin-top: 20px;
+}
+
+.clothdet{
+	font-family: Trebuchet MS;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+.sampleclothes::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.sampleclothes2::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+.search input[type=text]{
+  width:300px;
+  height:35px;
+	border-radius:25px;
+  border: none;
+}
+         
+.search{
+	float:right;
+	margin:11px;
+	font-size: 11px;
+}
+         
+.search button{
+    background-color: #333;
+    float: right;
+    padding: 4px 10px;
+    margin-right: 16px;
+    border: none;
+    cursor: pointer;
+}
+	
+.lab2redirect{
+	color: black;
+	font-size:15px;	
+}
+
+.lab2 a:hover{
+	color: blue;
+}
+
+	
+.footertext{
+	color: black;
+	text-align: center;
+	margin: 2px;
+	font-size: 15px;
+	font-family: Trebuchet MS;
+}
+
+
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px; 
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  font-family: Trebuchet MS;
+}
+
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Trebuchet MS;
+}
+
+.require{
+	font-family: Trebuchet MS;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.container2 {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+
+
+
+
+* {box-sizing: border-box}
+
+.container1{
+	border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 16px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  display: inline-block;
+  border: none;
+  background: white;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+}
+
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+  font-family: Trebuchet MS;
+}
+
+.regist{
+		font-family: Trebuchet MS;
+}
+
+.links-container{
+	background-color: #333;
+	border-radius: 23px;
+    width: 100%;
+    display: flex;
+    padding: 10px 10vw;
+    justify-content: center;
+    list-style: none;
+    border-top: 1px solid #d1d1d1;
+}
+
+.link{
+	font-family: Trebuchet MS;
+    text-transform: capitalize;
+    padding: 0 10px;
+    margin: 0 600px;
+    text-decoration: none;
+    color: white;
+    opacity: 0.5;
+    transition: .5s;
+}
+
+.link:hover{
+    opacity: 1;
+}
+
+.hero-section{
+    width: 100%;
+    height: calc(100vh - 120px);
+    background-image: url('preview.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .logo{
+    display: block;
+    margin: auto;
+}
+
+.hero-section .sub-heading{
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 300;
+	font-family: Trebuchet MS;
+}
+
+.hero-section .sub-head{
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-weight: 300;
+	font-family: Brush Script MT;
+}
+
+.product{
+    position: relative;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+.product-category{
+    padding: 0 10vw;
+    font-size: 20px;
+    font-weight: 300;
+    margin: 5px;
+    text-transform: capitalize;
+	font-family: Trebuchet MS;
+}
+
+
+.card-btn{
+	border-radius: 5px;
+    padding: 4px 10px;
+    margin-right: 16px;
+    cursor: pointer;
+	font-family: Trebuchet MS;
+	text-transform: capitalize; 
+	
+	
+	
+	
+  
+
+}
+
+.card-btn:hover{
+    background-color: black;
+	color: white; 
+	transition: 0.5s ease;
+}
+
+
+
+
+.product-brand{
+    text-transform: uppercase;
+	font-size: 17px;
+	font-family: Trebuchet MS;
+}
+
+.product-short-des{
+    width: 100%;
+    height: 20px;
+    line-height: 12px;
+    overflow: hidden;
+    opacity: 0.5;
+    text-transform: capitalize;
+    margin: 5px 0;
+	font-family: Trebuchet MS;
+}
+
+.price{
+    font-weight: 900;
+    font-size: 17px;
+}
+
+.actual-price{
+    margin-left: 30px;
+	padding-right: 10px;
+    opacity: 0.5;
+    text-decoration: line-through;
+}
+
+
+
+footer{
+    position: relative;
+    width: 100%;
+    padding: 40px 10vw;
+    padding-bottom: 120px;
+    background: #383838;
+	border-radius: 12px;
+}
+
+.footer-content{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.footer-content .logo{
+    height: 100px;
+	color: white;
+	font-family: Brush Script MT;
+	font-size: 25px;
+}
+
+.footer-content .logo1{
+    height: 100px;
+	color: rgba(255, 255, 255, 0.75);
+	font-family: Trebuchet MS;
+	font-size: 15px;
+}
+
+.footer-content .logo2{
+    height: 100px;
+	color: rgba(255, 255, 255, 0.75);
+	font-family: Trebuchet MS;
+	font-size: 10px;
+}
+
+.footer-ul-container{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.category{
+    width: 200px;
+    display: grid;
+    grid-gap: 10px;
+    list-style: none;
+}
+
+.category-title{
+    grid-column: span 2;
+    text-transform: capitalize;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.category .footer-link{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.75);
+	font-family: Trebuchet MS;
+}
+
+.footer-link:hover{
+    color: #fff;
+}
+
+    cursor: pointer;
+}
+
+.size-radio-btn.check{
+    background: #383838;
+    color: #fff;
+}
+
+.btn{
+    width: 40px;
+    padding: 20px;
+    border-radius: 5px;
+    background: none;
+    border: 1px solid #383838;
+    color: #383838;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 20px 0;
+    text-transform: capitalize;
+}
+
+.cart-btn{
+    margin-right: 2%;
+    background: #383838;
+    color: #fff;
+	border-radius: 12px;
+	height: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cart.css">
+	<link rel="stylesheet" href="css/all.min.css">	
+	<link rel="stylesheet" href="css/fontawesome.min.css">
+	<link rel="stylesheet" href="LAB3.css">
+	<title>FUTURE STORES</title>
+</head>
+<body>
+	
+	<div class="navbar" style="border: none">
+		<a href="index.html" class="navbartext"><b>DF-STORES</b></a>
+		<a class="navbartext" href="index.html"><i class="fas fa-home"></i>HOME</a>
+		<a class="navbartext" href="login.html"><i class="fas fa-sign-in-alt"></i>LOGIN</a>
+		<a class="navbartext" href="REGISTER.html"><i class="fas fa-male"></i>REGISTER</a>
+		<a class="navbartext" href="CONTACT US.html"><i class="fas fa-id-card"></i>CONTACT US</a>
+		
+		
+		
+		<div class="search">
+        <form>
+			<button type="button" onclick="window.location.href='cart.html'"><img src="cart.png" height="28px"></button>
+			<!-- <a href="cart.html"><img src="cart.png" height="28px"></a> -->
+			<button class=""><img src="search.png" height="28px"></button>
+			<input type="text" placeholder="What are you looking for....." name="search">	
+		</form>
+ 
+		</div>
+		
+	</div>
+    <div class="cartsection">
+        <h1 class="head">MY CART</h1> 
+        <div class="products-container">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+        </div>
+        <div class="products">
+            
+        </div>
+        <a href="index.html"><div class="checkout" onclick="alert('Thank You for Your Order you will be Contacted Soon')">CHECK OUT</div></a>
+    </div> 
+    <script src="cart.js"></script>  
+	
+	
+	
+	
+</body>
+</html>
